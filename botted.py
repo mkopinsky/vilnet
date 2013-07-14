@@ -763,7 +763,7 @@ class Bot(irc.IRCClient):
                     return
                 
                 if msg.find("sS") != -1 or msg.find("hH") != -1:# or msg.find(u'Hɥ') != -1 or msg.find(u'Ss') != -1:
-                    self.msg(channel, upsidedown.transform(msg).encode('utf-8'))
+                    self.msg(channel, 'emperorzurg: !kick '+user_nick+' "'+upsidedown.transform(msg).encode('utf-8')+'"')
                     
                     return
                 
